@@ -18,12 +18,20 @@ Users should be able to:
 
 ## Screenshot
 
+![](./screenshot.png)
+
 ### Links
 
 - [Solution URL](https://github.com/annaindistress/frontend-mentor-blog-preview-card)
 - [Live Site URL](https://annaindistress.github.io/frontend-mentor-blog-preview-card/)
 
 ## Built with
+
+- Semantic HTML5 markup
+- Mobile-first workflow
+- CSS custom properties
+- PostCSS
+- Vite
 
 ## Author
 
