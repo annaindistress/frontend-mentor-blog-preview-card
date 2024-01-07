@@ -1,0 +1,123 @@
+.card {
+  position: relative;
+  display: grid;
+  gap: 12px;
+  max-width: 384px;
+  padding: 24px;
+  padding-top: 248px;
+  background-color: var(--color-base-white);
+  border: 1px solid var(--color-base-black);
+  border-radius: 20px;
+  box-shadow: 8px 8px 0 0 var(--color-base-blakest);
+}
+
+.card::before {
+  content: '';
+  position: absolute;
+  top: 24px;
+  inset-inline: 24px;
+  display: block;
+  width: calc(100% - 48px);
+  height: 200px;
+  background-image: url('/images/illustration.svg');
+  background-repeat: no-repeat;
+  border-radius: 10px;
+  overflow: hidden;
+}
+
+.card__title {
+  margin: 0;
+  font-weight: 800;
+  font-size: 20px;
+}
+
+.card__link {
+  text-decoration: none;
+  color: var(--color-base-black);
+  outline: none;
+}
+
+.card__link:focus {
+  color: var(--color-accent-yellow);
+}
+
+.card__link::after {
+  content: '';
+  position: absolute;
+  inset: 0;
+}
+
+.card__lead {
+  margin: 0;
+  color: var(--color-base-grey);
+}
+
+.card__author {
+  display: grid;
+  grid-template-columns: 32px 1fr;
+  gap: 12px;
+  align-items: center;
+  padding-top: 12px;
+}
+
+.card__author-avatar {
+  display: block;
+  width: 100%;
+  height: auto;
+}
+
+.card__author-name {
+  font-weight: 800;
+}
+
+.card__date {
+  order: -1;
+  margin: 0;
+  font-size: 12px;
+}
+
+.card__tags {
+  order: -2;
+  margin: 0;
+  padding: 0;
+  list-style: none;
+}
+
+.card__tag {
+  display: inline-block;
+  padding: 4px 12px;
+  font-weight: 800;
+  font-size: 12px;
+  background-color: var(--color-accent-yellow);
+  border-radius: 4px;
+}
+
+@media (min-width: 768px) {
+
+  .card {
+    box-shadow: 16px 16px 0 0 var(--color-base-blakest);
+  }
+
+  .card__title {
+    font-size: 24px;
+  }
+
+  .card__author-name {
+    font-size: 14px;
+  }
+
+  .card__date {
+    font-size: 14px;
+  }
+
+  .card__tag {
+    font-size: 14px;
+  }
+}
+
+@media (hover: hover) and (pointer: fine) {
+
+  .card__link:hover {
+    color: var(--color-accent-yellow);
+  }
+}

@@ -1,0 +1,24 @@
+.page {
+  margin: 0;
+  font-family: 'Figtree', Arial, Helvetica, sans-serif;
+  font-weight: 500;
+  font-size: 14px;
+  line-height: 1.5;
+  color: var(--color-base-black);
+  background-color: var(--color-accent-yellow);
+}
+
+.page__main {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  min-height: 100vh;
+  padding: 24px;
+}
+
+@media (min-width: 768px) {
+
+  .page {
+    font-size: 16px;
+  }
+}
