@@ -20,7 +20,7 @@ Users should be able to:
 
 ![](./screenshot.png)
 
-### Links
+## Links
 
 - [Solution URL](https://github.com/annaindistress/frontend-mentor-blog-preview-card)
 - [Live Site URL](https://annaindistress.github.io/frontend-mentor-blog-preview-card/)
